@@ -10,8 +10,33 @@ import AdSidebars from '@/components/AdSidebars';
 const font = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'] });
 
 export const metadata: Metadata = {
-  title: 'KrediKlavuzu — Bankacılık Ürünlerini Karşılaştır',
-  description: 'KrediKlavuzu ile 50+ bankanın kredi, mevduat ve kredi kartı tekliflerini ücretsiz karşılaştırın.',
+  title: { default: 'KrediKlavuzu — Bankacılık Ürünlerini Karşılaştır', template: '%s | KrediKlavuzu' },
+  description: 'KrediKlavuzu ile 50+ bankanın kredi, mevduat ve kredi kartı tekliflerini ücretsiz karşılaştırın. Türkiye\'nin en kapsamlı finansal karşılaştırma platformu.',
+  keywords: ['kredi karşılaştırma', 'mevduat faiz', 'konut kredisi', 'kredi kartı', 'ihtiyaç kredisi', 'banka faiz oranları'],
+  authors: [{ name: 'KrediKlavuzu' }],
+  creator: 'KrediKlavuzu',
+  metadataBase: new URL('https://krediklavuzu.com'),
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    locale: 'tr_TR',
+    url: 'https://krediklavuzu.com',
+    siteName: 'KrediKlavuzu',
+    title: 'KrediKlavuzu — Bankacılık Ürünlerini Karşılaştır',
+    description: '50+ bankanın kredi, mevduat ve kredi kartı tekliflerini ücretsiz karşılaştırın.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KrediKlavuzu — Bankacılık Ürünlerini Karşılaştır',
+    description: '50+ bankanın faiz oranlarını karşılaştır, en iyi teklifi bul.',
+  },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  // Doğrulama kodları — arama motorlarına kayıt sonrası doldurulacak
+  verification: {
+    google: 'GOOGLE_VERIFICATION_CODE',
+    // yandex: 'YANDEX_VERIFICATION_CODE',   // eklenince uncomment yap
+    // other: { 'msvalidate.01': 'BING_VERIFICATION_CODE' }
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
