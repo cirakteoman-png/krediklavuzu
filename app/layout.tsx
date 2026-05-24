@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   // Doğrulama kodları — arama motorlarına kayıt sonrası doldurulacak
   verification: {
-    google: 'GOOGLE_VERIFICATION_CODE',
+    google: '6nUVM-HddpbTArB4h357uFn64bb63lYih3k6rQuUi8I',
     // yandex: 'YANDEX_VERIFICATION_CODE',   // eklenince uncomment yap
     // other: { 'msvalidate.01': 'BING_VERIFICATION_CODE' }
   },
