@@ -1,9 +1,13 @@
-import MevduatTab from '@/components/tabs/MevduatTab';
-import MevduatTable from '@/components/MevduatTable';
+import { getMevduat } from '@/lib/queries';
+import MevduatTableDB from '@/components/MevduatTableDB';
+import MevduatCalc from '@/components/calcs/MevduatCalc';
 
 export const metadata = { title: 'Mevduat Faiz Karşılaştırma | KrediKlavuzu' };
+export const dynamic = 'force-dynamic';
 
-export default function MevduatPage() {
+export default async function MevduatPage() {
+  const tumMevduat = await getMevduat();
+
   return (
     <div>
       <div className="bg-gradient-to-r from-green-800 to-green-600 py-10 px-6">
@@ -17,14 +21,14 @@ export default function MevduatPage() {
       <section className="bg-gray-50 py-10 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-6">Getiri Hesaplama</h2>
-          <MevduatTab />
+          <MevduatCalc mevduat={tumMevduat} />
         </div>
       </section>
 
       <section className="bg-gray-50 py-10 px-6 pb-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-6">Tüm Mevduat Faizleri</h2>
-          <MevduatTable />
+          <MevduatTableDB mevduat={tumMevduat} />
         </div>
       </section>
     </div>
