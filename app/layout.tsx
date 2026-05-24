@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   // Doğrulama kodları — arama motorlarına kayıt sonrası doldurulacak
   verification: {
     google: '6nUVM-HddpbTArB4h357uFn64bb63lYih3k6rQuUi8I',
-    // yandex: 'YANDEX_VERIFICATION_CODE',   // eklenince uncomment yap
-    // other: { 'msvalidate.01': 'BING_VERIFICATION_CODE' }
+    yandex: '9a79ffcdff1d98e2',
+    other: { 'msvalidate.01': '5DD8409597E79D4386EC00B850C29990' },
   },
 };
 
