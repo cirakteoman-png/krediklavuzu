@@ -21,22 +21,22 @@ export default function HomeTabSection() {
   const currentTab = TABS.find(t => t.key === active)!;
 
   return (
-    <section className="bg-gray-50 py-12 px-6">
+    <section id="karsilastir" className="px-4 sm:px-6 py-20 sm:py-28 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
-        <p className="text-xs font-bold text-green-700 uppercase tracking-widest mb-2">Hızlı Hesaplama</p>
-        <h2 className="text-2xl font-extrabold text-gray-900 mb-1">Aylık ödemenizi hesaplayın</h2>
-        <p className="text-gray-500 mb-8">Kredi tutarı, vade ve faiz oranı girin — anında hesaplama yapın.</p>
+        <p className="text-xs font-bold font-display text-brand uppercase tracking-[0.2em] mb-3">Hızlı Hesaplama</p>
+        <h2 className="text-3xl sm:text-5xl font-bold text-ink leading-tight">Aylık ödemenizi hesaplayın</h2>
+        <p className="text-ink-soft mt-4 mb-10 text-lg max-w-xl">Kredi tutarı, vade ve faiz oranı girin — anında hesaplama yapın.</p>
 
         {/* Tabs */}
-        <div className="flex border-b-2 border-gray-200 mb-8 gap-1">
+        <div className="flex flex-wrap gap-2 mb-10">
           {TABS.map(tab => (
             <button
               key={tab.key}
               onClick={() => setActive(tab.key)}
-              className={`px-5 py-2.5 text-sm font-semibold border-b-2 -mb-0.5 transition-colors whitespace-nowrap
+              className={`px-5 py-2.5 rounded-full text-sm font-semibold font-display transition-colors whitespace-nowrap
                 ${active === tab.key
-                  ? 'text-green-600 border-green-600'
-                  : 'text-gray-500 border-transparent hover:text-gray-700'}`}
+                  ? 'bg-ink text-cream'
+                  : 'bg-surface border border-line text-ink-soft hover:bg-cream-deep hover:text-ink'}`}
             >
               {tab.label}
             </button>
@@ -49,10 +49,10 @@ export default function HomeTabSection() {
         {active === 'kart'    && <KartTab />}
         {active === 'mevduat' && <MevduatTab />}
 
-        <div className="mt-6 text-center">
+        <div className="mt-8">
           <Link
             href={currentTab.href}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-green-700 hover:text-green-800"
+            className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold font-display text-ink hover:bg-cream-deep transition-colors"
           >
             Tüm teklifleri gör →
           </Link>

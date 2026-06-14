@@ -1,5 +1,7 @@
 import { getKrediKartlari } from '@/lib/queries';
 import KartTableDB from '@/components/KartTableDB';
+import PageHeader from '@/components/PageHeader';
+import Reveal from '@/components/Reveal';
 
 export const metadata = { title: 'Kredi Kartı Karşılaştırma | KrediKlavuzu' };
 export const dynamic = 'force-dynamic';
@@ -9,18 +11,20 @@ export default async function KrediKartiPage() {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-green-800 to-green-600 py-10 px-6">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-green-300 text-sm font-semibold mb-1">Kart Karşılaştırma</p>
-          <h1 className="text-3xl font-extrabold text-white mb-2">Kredi Kartı</h1>
-          <p className="text-white/75">Puan, mil, nakit iade — size en uygun kartı bulun.</p>
-        </div>
-      </div>
+      <PageHeader
+        eyebrow="Kart Karşılaştırma"
+        title="Kredi Kartı"
+        desc="Puan, mil, nakit iade — size en uygun kartı bulun."
+      />
 
-      <section className="bg-gray-50 py-10 px-6 pb-16">
+      <section className="px-4 sm:px-6 py-14 pb-20">
         <div className="max-w-6xl mx-auto">
-          <div className="text-sm text-gray-500 mb-6">{kartlar.length} kart listeleniyor</div>
-          <KartTableDB kartlar={kartlar} />
+          <Reveal>
+            <div className="text-sm text-ink-soft mb-6">{kartlar.length} kart listeleniyor</div>
+          </Reveal>
+          <Reveal delay={1}>
+            <KartTableDB kartlar={kartlar} />
+          </Reveal>
         </div>
       </section>
     </div>

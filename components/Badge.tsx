@@ -4,7 +4,7 @@ interface Props {
 
 const MAP = {
   best: { label: 'En İyi',    cls: 'bg-yellow-100 text-yellow-800' },
-  low:  { label: 'En Düşük', cls: 'bg-green-100  text-green-800'  },
+  low:  { label: 'En Düşük', cls: 'bg-brand/10  text-brand-dark'  },
   new:  { label: 'Yeni',      cls: 'bg-purple-100 text-purple-800' },
 };
 

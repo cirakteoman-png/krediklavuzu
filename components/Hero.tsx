@@ -1,31 +1,74 @@
+import Link from 'next/link';
+import Reveal from './Reveal';
+
+const STATS = [
+  { num: '50+', label: 'Banka & kurum' },
+  { num: '2M+', label: 'Kullanıcı' },
+  { num: '%100', label: 'Ücretsiz & tarafsız' },
+];
+
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-green-800 to-green-600 py-16 px-6">
+    <section className="px-4 sm:px-6 pt-10 pb-6">
       <div className="max-w-6xl mx-auto">
-        <div className="inline-flex items-center gap-2 bg-white/15 border border-white/25 rounded-full px-3 py-1 text-xs text-white mb-5">
-          <span className="w-1.5 h-1.5 bg-green-400 rounded-full" />
-          Canlı faiz verileri — anlık güncelleme
-        </div>
+        <div className="relative overflow-hidden rounded-[2rem] bg-surface border border-line px-6 py-16 sm:px-14 sm:py-24">
+          {/* Dekoratif yeşil-lime ışıma */}
+          <div
+            aria-hidden
+            className="glow-brand pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full opacity-20 blur-md"
+          />
 
-        <h1 className="text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 max-w-xl">
-          Türkiye&apos;nin <span className="text-green-300">en avantajlı</span><br />bankacılık ürününü bul
-        </h1>
+          <div className="relative">
+            <Reveal>
+              <span className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-3.5 py-1.5 text-xs font-semibold font-display">
+                <span className="h-1.5 w-1.5 rounded-full bg-brand animate-pulse" />
+                Canlı faiz verileri — anlık güncelleme
+              </span>
+            </Reveal>
 
-        <p className="text-lg text-white/80 mb-10 max-w-lg">
-          50+ banka ve finansal kurumun faiz oranlarını karşılaştır, en iyi teklifi saniyeler içinde bul.
-        </p>
+            <Reveal delay={1}>
+              <h1 className="mt-7 max-w-3xl text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.02] text-ink">
+                En{' '}
+                <span className="rounded-lg bg-lime px-2 box-decoration-clone">avantajlı</span>{' '}
+                bankacılık ürününü saniyede bul.
+              </h1>
+            </Reveal>
 
-        <div className="flex flex-wrap gap-8">
-          {[
-            { icon: '🛡️', text: 'Ücretsiz & Tarafsız' },
-            { icon: '✅', text: 'BDDK onaylı' },
-            { icon: '👥', text: '2 Milyon+ Kullanıcı' },
-          ].map(({ icon, text }) => (
-            <div key={text} className="flex items-center gap-2 text-white/90 text-sm font-medium">
-              <span>{icon}</span>
-              {text}
-            </div>
-          ))}
+            <Reveal delay={2}>
+              <p className="mt-6 max-w-lg text-lg text-ink-soft">
+                50+ banka ve finansal kurumun kredi, mevduat ve kart tekliflerini tek ekranda,
+                tarafsız ve ücretsiz karşılaştır.
+              </p>
+            </Reveal>
+
+            <Reveal delay={3}>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <Link
+                  href="#karsilastir"
+                  className="inline-flex items-center gap-2 rounded-2xl bg-ink px-7 py-4 text-base font-semibold font-display text-cream transition-transform hover:-translate-y-0.5"
+                >
+                  Karşılaştırmaya başla →
+                </Link>
+                <Link
+                  href="#nasil-calisir"
+                  className="inline-flex items-center gap-2 rounded-2xl border border-ink/20 px-7 py-4 text-base font-semibold font-display text-ink transition-colors hover:bg-cream-deep"
+                >
+                  Nasıl çalışır?
+                </Link>
+              </div>
+            </Reveal>
+
+            <Reveal delay={4}>
+              <div className="mt-12 flex flex-wrap gap-10 border-t border-line pt-8">
+                {STATS.map(({ num, label }) => (
+                  <div key={label}>
+                    <div className="text-3xl font-bold font-display text-ink">{num}</div>
+                    <div className="mt-1 text-sm text-ink-soft">{label}</div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
         </div>
       </div>
     </section>

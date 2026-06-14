@@ -1,9 +1,73 @@
 @import "tailwindcss";
 
+@theme {
+  /* Palet — Krem + Yeşil (legowerk-ilhamlı) */
+  --color-cream: #f6f4ee;
+  --color-cream-deep: #efece2;
+  --color-ink: #111111;
+  --color-ink-soft: #3a3a36;
+  --color-line: #e7e3d9;
+  --color-surface: #ffffff;
+  --color-brand: #16a34a;
+  --color-brand-dark: #15803d;
+  --color-lime: #c8f230;
+
+  /* Tipografi */
+  --font-display: var(--font-space-grotesk), "Plus Jakarta Sans", sans-serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+
+  /* Yuvarlatma */
+  --radius-xl2: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #f9fafb;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Başlıklarda display font + sıkı harf aralığı */
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Dekoratif yeşil-lime ışıma (hero ve bölüm köşelerinde) */
+.glow-brand {
+  background: radial-gradient(circle at 30% 30%, var(--color-lime), var(--color-brand));
+}
+
+/* ── Scroll-reveal animasyonu ───────────────────────────── */
+@keyframes reveal-rise {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: reveal-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Sırayla beliren çocuklar için gecikme yardımcıları */
+.reveal[data-delay="1"].is-visible { animation-delay: 0.08s; }
+.reveal[data-delay="2"].is-visible { animation-delay: 0.16s; }
+.reveal[data-delay="3"].is-visible { animation-delay: 0.24s; }
+.reveal[data-delay="4"].is-visible { animation-delay: 0.32s; }
+.reveal[data-delay="5"].is-visible { animation-delay: 0.40s; }
+
+/* Hareket azaltma tercihi */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .reveal.is-visible { opacity: 1; animation: none; }
 }

@@ -18,11 +18,11 @@ type Kart = {
 export default function KartTableDB({ kartlar }: { kartlar: Kart[] }) {
   return (
     <div className="overflow-x-auto">
-      <table className="w-full bg-white rounded-xl shadow-sm overflow-hidden border-separate border-spacing-0 border border-gray-100">
+      <table className="w-full bg-surface rounded-xl shadow-sm overflow-hidden border-separate border-spacing-0 border border-line">
         <thead>
-          <tr className="bg-gray-50">
+          <tr className="bg-cream">
             {['Kredi Kartı', 'Puan / Mil', 'Aidat', 'Limit', 'Puan', ''].map(h => (
-              <th key={h} className="px-5 py-3 text-left text-xs font-bold text-gray-400 uppercase tracking-wider border-b border-gray-200">
+              <th key={h} className="px-5 py-3 text-left text-xs font-bold text-ink-soft uppercase tracking-wider border-b border-line">
                 {h}
               </th>
             ))}
@@ -30,7 +30,7 @@ export default function KartTableDB({ kartlar }: { kartlar: Kart[] }) {
         </thead>
         <tbody>
           {kartlar.map((k, i) => (
-            <tr key={k.id} className={`hover:bg-green-50 transition-colors ${i !== kartlar.length - 1 ? 'border-b border-gray-100' : ''}`}>
+            <tr key={k.id} className={`hover:bg-brand/5 transition-colors ${i !== kartlar.length - 1 ? 'border-b border-line' : ''}`}>
               <td className="px-5 py-4">
                 <div className="flex items-center gap-3">
                   <BankLogo bankId={k.bank_id} size="sm" />
@@ -39,17 +39,17 @@ export default function KartTableDB({ kartlar }: { kartlar: Kart[] }) {
                       {k.name}
                       {k.badge && <Badge type={k.badge} />}
                     </div>
-                    <div className="text-xs text-gray-400">{k.banks?.name}</div>
+                    <div className="text-xs text-ink-soft">{k.banks?.name}</div>
                   </div>
                 </div>
               </td>
               <td className="px-5 py-4">
                 <div className="font-semibold text-sm">{k.puan_orani}</div>
-                <div className="text-xs text-gray-400">{k.puan_tipi}</div>
+                <div className="text-xs text-ink-soft">{k.puan_tipi}</div>
               </td>
               <td className="px-5 py-4">
                 {k.aidat === null
-                  ? <span className="font-bold text-green-700 text-sm">Yok</span>
+                  ? <span className="font-bold text-brand text-sm">Yok</span>
                   : <span className="font-semibold text-sm">{k.aidat} ₺/yıl</span>}
               </td>
               <td className="px-5 py-4 font-semibold text-sm">
@@ -57,7 +57,7 @@ export default function KartTableDB({ kartlar }: { kartlar: Kart[] }) {
               </td>
               <td className="px-5 py-4"><StarRating rating={k.rating} /></td>
               <td className="px-5 py-4">
-                <button className="bg-green-600 hover:bg-green-700 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
+                <button className="bg-ink hover:opacity-90 text-cream text-xs font-bold px-4 py-2 rounded-lg transition-colors whitespace-nowrap">
                   Başvur
                 </button>
               </td>
