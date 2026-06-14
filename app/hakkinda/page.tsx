@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 };
 
 const VALUES = [
-  { title: 'Tarafsızlık', desc: 'Hiçbir bankanın reklamını öne çıkarmayız. Sıralama, sana en uygun koşula göre yapılır.' },
-  { title: 'Ücretsizlik', desc: 'Karşılaştırma ve hesaplama araçlarının tamamı kullanıcılar için tamamen ücretsizdir.' },
-  { title: 'Şeffaflık', desc: 'Faiz oranlarını, masrafları ve toplam maliyeti açıkça gösteririz; gizli kalem yoktur.' },
-  { title: 'Güncellik', desc: 'Oranlar ve teklifler düzenli olarak güncellenir; kararını en taze veriyle verirsin.' },
+  { title: 'Tarafsızlık', desc: 'Hiçbir bankayı parayla öne çıkarmıyoruz. Sıralamayı koşullar belirliyor, reklam değil.' },
+  { title: 'Ücretsizlik', desc: 'Karşılaştırma da hesaplama araçları da ücretsiz. Kullanmak için ödeme yapmazsınız.' },
+  { title: 'Şeffaflık', desc: 'Faizi, masrafı ve toplam maliyeti olduğu gibi gösteriyoruz. Satır arasına saklanan kalem yok.' },
+  { title: 'Güncellik', desc: 'Oranları düzenli yeniliyoruz ki kararınızı eski veriyle değil, günün rakamıyla verin.' },
 ];
 
 const STATS = [
@@ -28,24 +28,24 @@ export default function HakkindaPage() {
     <div>
       <PageHeader
         eyebrow="Hakkımızda"
-        title="Doğru finansal kararı herkes için kolaylaştırıyoruz"
-        desc="KrediKlavuzu, bankacılık ürünlerini tarafsız biçimde karşılaştırmanı sağlayan bağımsız bir platformdur."
+        title="Bankaları sizin için karşılaştırıyoruz"
+        desc="KrediKlavuzu, banka ürünlerini tarafsız biçimde karşılaştıran bağımsız bir platform."
       />
 
       <section className="px-4 sm:px-6 py-14">
         <div className="max-w-3xl mx-auto space-y-5">
           <Reveal>
             <p className="text-lg leading-relaxed text-ink-soft">
-              Finansal ürünler karmaşıktır: onlarca banka, farklı faiz oranları, gizli masraflar ve
-              anlaşılması zor koşullar. KrediKlavuzu’nu, bu karmaşayı herkesin anlayabileceği sade bir
-              karşılaştırmaya dönüştürmek için kurduk.
+              Onlarca banka, birbirini tutmayan faizler, satır aralarına gizlenmiş masraflar.
+              Finansal ürünleri karşılaştırmak çoğu insan için yorucu bir iş. KrediKlavuzu’nu tam da
+              bu yüzden kurduk: bu kalabalığı herkesin okuyabileceği sade bir tabloya indirmek için.
             </p>
           </Reveal>
           <Reveal delay={1}>
             <p className="text-lg leading-relaxed text-ink-soft">
-              Amacımız basit: ihtiyaç kredisinden konut kredisine, mevduattan kredi kartına kadar
-              tüm seçenekleri tek ekranda, tarafsız ve ücretsiz şekilde önüne koymak. Böylece
-              dakikalar içinde sana en uygun teklifi bulabilirsin.
+              İhtiyaç kredisinden konut kredisine, mevduattan kredi kartına kadar tüm seçenekleri tek
+              ekrana topluyoruz. Reklam sıralaması yok; ne çıkıyorsa rakamların söylediği o. Gerisi
+              size kalmış.
             </p>
           </Reveal>
         </div>

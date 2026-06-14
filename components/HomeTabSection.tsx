@@ -24,8 +24,8 @@ export default function HomeTabSection() {
     <section id="karsilastir" className="px-4 sm:px-6 py-20 sm:py-28 scroll-mt-20">
       <div className="max-w-6xl mx-auto">
         <p className="text-xs font-bold font-display text-brand uppercase tracking-[0.2em] mb-3">Hızlı Hesaplama</p>
-        <h2 className="text-3xl sm:text-5xl font-bold text-ink leading-tight">Aylık ödemenizi hesaplayın</h2>
-        <p className="text-ink-soft mt-4 mb-10 text-lg max-w-xl">Kredi tutarı, vade ve faiz oranı girin — anında hesaplama yapın.</p>
+        <h2 className="text-3xl sm:text-5xl font-bold text-ink leading-tight">Aylık taksitini hesapla</h2>
+        <p className="text-ink-soft mt-4 mb-10 text-lg max-w-xl">Tutarı, vadeyi ve faizi gir; taksitin ve toplam maliyetin anında çıksın.</p>
 
         {/* Tabs */}
         <div className="flex flex-wrap gap-2 mb-10">

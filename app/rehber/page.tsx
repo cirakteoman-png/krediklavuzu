@@ -16,8 +16,8 @@ export default function RehberPage() {
     <div>
       <PageHeader
         eyebrow="Finans Rehberi"
-        title="Rehberler & İpuçları"
-        desc="Kredi, mevduat ve kredi kartı konularında sade, uygulanabilir rehberler. Doğru kararı vermeniz için bilmeniz gerekenler."
+        title="Rehberler"
+        desc="Kredi, mevduat ve kredi kartında işinize yarayacak, sade anlatımlı rehberler."
       />
 
       <section className="px-4 sm:px-6 py-14 pb-20">

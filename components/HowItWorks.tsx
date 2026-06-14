@@ -3,18 +3,18 @@ import Reveal from './Reveal';
 const STEPS = [
   {
     num: '1',
-    title: 'Ürünü Seç',
-    desc: 'İhtiyaç kredisi, konut kredisi, kredi kartı veya mevduat — karşılaştırmak istediğiniz ürünü seçin.',
+    title: 'Ürünü seç',
+    desc: 'İhtiyaç kredisi, konut kredisi, kredi kartı, mevduat. Hangisini karşılaştıracaksan onu aç.',
   },
   {
     num: '2',
     title: 'Karşılaştır',
-    desc: '50+ bankanın güncel faiz oranlarını, koşullarını ve avantajlarını tek ekranda görün, filtreleyin.',
+    desc: '50’den fazla bankanın güncel oranını ve koşulunu tek ekranda gör, tutara ve vadeye göre sırala.',
   },
   {
     num: '3',
-    title: 'Hemen Başvur',
-    desc: 'Seçtiğiniz bankaya platformumuz üzerinden saniyeler içinde dijital başvuru yapın.',
+    title: 'Başvur',
+    desc: 'Beğendiğin teklifte ilgili bankaya geç, başvurunu dijital olarak tamamla.',
   },
 ];
 

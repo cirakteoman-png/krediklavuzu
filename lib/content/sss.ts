@@ -16,19 +16,19 @@ export const SSS: SSSCategory[] = [
     items: [
       {
         q: 'KrediKlavuzu ücretli mi?',
-        a: 'Hayır. KrediKlavuzu üzerinden banka ürünlerini karşılaştırmak tamamen ücretsizdir. Sizden herhangi bir ücret talep edilmez.',
+        a: 'Hayır. Banka ürünlerini karşılaştırmak tamamen ücretsiz. Sizden hiçbir ücret alınmaz.',
       },
       {
-        q: 'Karşılaştırma sonuçları ne kadar güncel?',
-        a: 'Faiz oranları ve teklifler düzenli olarak güncellenir. Yine de başvuru öncesinde ilgili bankanın resmî koşullarını teyit etmenizi öneririz.',
+        q: 'Sonuçlar ne kadar güncel?',
+        a: 'Faiz oranları ve teklifler düzenli güncelleniyor. Yine de başvurudan önce ilgili bankanın koşullarını teyit edin.',
       },
       {
-        q: 'Başvurumu doğrudan KrediKlavuzu üzerinden mi yapıyorum?',
-        a: 'KrediKlavuzu bağımsız bir karşılaştırma platformudur. Size en uygun teklifi bulmanıza yardımcı olur; başvuru süreci ilgili bankanın kanalları üzerinden tamamlanır.',
+        q: 'Başvuruyu KrediKlavuzu üzerinden mi yapıyorum?',
+        a: 'Hayır. KrediKlavuzu bağımsız bir karşılaştırma platformu. Size uygun teklifi bulmanıza yardımcı oluyor; başvuru ilgili bankanın kendi kanallarından tamamlanıyor.',
       },
       {
         q: 'Verilerim güvende mi?',
-        a: 'Kişisel verileriniz KVKK kapsamında işlenir. Detaylar için Gizlilik Politikası ve KVKK Aydınlatma Metni sayfalarımızı inceleyebilirsiniz.',
+        a: 'Kişisel verileriniz KVKK kapsamında işleniyor. Ayrıntılar Gizlilik Politikası ve KVKK Aydınlatma Metni sayfalarında.',
       },
     ],
   },
@@ -36,16 +36,16 @@ export const SSS: SSSCategory[] = [
     category: 'İhtiyaç Kredisi',
     items: [
       {
-        q: 'İhtiyaç kredisi için hangi belgeler gerekir?',
-        a: 'Genellikle kimlik yeterlidir; yüksek tutarlarda gelir belgesi (maaş bordrosu veya SGK hizmet dökümü) istenebilir.',
+        q: 'Hangi belgeler gerekiyor?',
+        a: 'Çoğu zaman kimlik yetiyor. Yüksek tutarlarda gelir belgesi (maaş bordrosu ya da SGK hizmet dökümü) istenebiliyor.',
       },
       {
-        q: 'Kredi onayı ne kadar sürede çıkar?',
-        a: 'Birçok bankada dijital başvurularda onay anında veya birkaç dakika içinde sonuçlanır. Bazı durumlarda 1 iş günü sürebilir.',
+        q: 'Onay ne kadar sürer?',
+        a: 'Dijital başvuruda birçok bankada onay anında ya da birkaç dakikada çıkıyor. Bazı durumlarda 1 iş gününü buluyor.',
       },
       {
-        q: 'Aylık taksitimi nasıl hesaplayabilirim?',
-        a: 'Ana sayfadaki veya ilgili ürün sayfasındaki kredi hesaplama aracına kredi tutarı, vade ve faiz oranını girerek aylık taksiti ve toplam maliyeti anında görebilirsiniz.',
+        q: 'Aylık taksitimi nasıl hesaplarım?',
+        a: 'Hesaplama aracına kredi tutarını, vadeyi ve faizi girin; aylık taksit ve toplam maliyet anında çıkıyor.',
       },
     ],
   },
@@ -53,16 +53,16 @@ export const SSS: SSSCategory[] = [
     category: 'Konut Kredisi',
     items: [
       {
-        q: 'Konut bedelinin tamamına kredi alabilir miyim?',
-        a: 'Hayır. Bankalar konutun ekspertiz değerinin belirli bir oranını kredilendirir; kalan kısmı peşinat olarak ödemeniz gerekir.',
+        q: 'Evin tamamına kredi alabilir miyim?',
+        a: 'Hayır. Banka ekspertiz değerinin bir kısmını kredilendiriyor, kalanını peşinat olarak siz koyuyorsunuz.',
       },
       {
-        q: 'Ekspertiz ücreti nedir?',
-        a: 'Krediye konu konutun gerçek piyasa değerinin bağımsız bir firma tarafından tespit edilmesi için alınan ücrettir. Kredi tutarı ekspertiz değerine göre belirlenir.',
+        q: 'Ekspertiz ücreti ne?',
+        a: 'Evin piyasa değerinin bağımsız bir firmaya tespit ettirilmesi için alınan ücret. Kredi tutarı bu değere göre belirleniyor.',
       },
       {
-        q: 'Konut kredisinde vade en fazla kaç ay olur?',
-        a: 'Vade bankaya ve mevzuata göre değişmekle birlikte konut kredilerinde uzun vadeler (120 ay ve üzeri) sunulabilir. Uzun vade taksiti düşürür ama toplam faizi artırır.',
+        q: 'Vade en fazla kaç ay olur?',
+        a: 'Bankaya ve mevzuata göre değişiyor; konut kredisinde 120 ay ve üzeri vadeler görülebiliyor. Uzun vade taksiti düşürür ama toplam faizi artırır.',
       },
     ],
   },
@@ -70,16 +70,16 @@ export const SSS: SSSCategory[] = [
     category: 'Kredi Kartı',
     items: [
       {
-        q: 'Aidatsız kredi kartı var mı?',
-        a: 'Evet, birçok banka aidatsız kart seçenekleri sunar. Karşılaştırma sayfamızda kartların aidat bilgisini görebilirsiniz.',
+        q: 'Aidatsız kart var mı?',
+        a: 'Var. Birçok banka aidatsız kart sunuyor. Karşılaştırma sayfasında kartların aidat bilgisini görebilirsiniz.',
       },
       {
         q: 'Faizsiz dönem ne demek?',
-        a: 'Ekstre kesim ile son ödeme tarihi arasındaki süredir. Borcunuzu son ödeme tarihinde tam öderseniz alışverişlerinize faiz işlemez.',
+        a: 'Ekstre kesim tarihiyle son ödeme tarihi arasındaki süre. Borcu son ödeme günü tam kapatırsanız alışverişe faiz işlemez.',
       },
       {
-        q: 'Puan, mil ve nakit iade arasındaki fark nedir?',
-        a: 'Puan ve nakit iade harcamalarınızdan kazanım sağlar; mil ise özellikle uçuş harcamalarında avantajlıdır. Harcama alışkanlığınıza uygun olanı seçmelisiniz.',
+        q: 'Puan, mil ve nakit iade farkı ne?',
+        a: 'Puan ve nakit iade harcamadan kazanım sağlar; mil özellikle uçuşta avantajlı. Harcama alışkanlığınıza uyanı seçin.',
       },
     ],
   },
@@ -87,16 +87,16 @@ export const SSS: SSSCategory[] = [
     category: 'Mevduat',
     items: [
       {
-        q: 'İlan edilen faiz net mi brüt mü?',
-        a: 'Bankaların ilan ettiği oran brüttür. Elinize geçecek net getiri, stopaj (gelir vergisi) kesintisinden sonra belli olur.',
+        q: 'İlan edilen faiz net mi, brüt mü?',
+        a: 'Brüt. Elinize geçecek net tutar, stopaj kesildikten sonra belli oluyor.',
       },
       {
         q: 'Stopaj nedir?',
-        a: 'Mevduat faiz gelirinden kaynakta kesilen gelir vergisidir. Oranı vadeye göre değişebilir ve dönemsel olarak güncellenir.',
+        a: 'Faiz gelirinden kaynakta kesilen gelir vergisi. Oranı vadeye göre değişebiliyor.',
       },
       {
         q: 'Hangi vade daha avantajlı?',
-        a: 'Genellikle daha uzun vadelerde brüt oran daha yüksektir, ancak paranızın o süre boyunca bağlı kalacağını göz önünde bulundurun. Net getirileri mevduat karşılaştırma aracıyla kıyaslayabilirsiniz.',
+        a: 'Genelde uzun vadede brüt oran daha yüksek, ama paranız o süre bağlı kalıyor. Net getirileri mevduat karşılaştırmasında kıyaslayabilirsiniz.',
       },
     ],
   },

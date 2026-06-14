@@ -22,22 +22,22 @@ export default function Hero() {
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-3.5 py-1.5 text-xs font-semibold font-display">
                 <span className="h-1.5 w-1.5 rounded-full bg-brand animate-pulse" />
-                Canlı faiz verileri — anlık güncelleme
+                Faiz oranları her gün güncelleniyor
               </span>
             </Reveal>
 
             <Reveal delay={1}>
               <h1 className="mt-7 max-w-3xl text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.02] text-ink">
-                En{' '}
-                <span className="rounded-lg bg-lime px-2 box-decoration-clone">avantajlı</span>{' '}
-                bankacılık ürününü saniyede bul.
+                Sana{' '}
+                <span className="rounded-lg bg-lime px-2 box-decoration-clone">en uygun</span>{' '}
+                krediyi 50 bankada birden ara.
               </h1>
             </Reveal>
 
             <Reveal delay={2}>
               <p className="mt-6 max-w-lg text-lg text-ink-soft">
-                50+ banka ve finansal kurumun kredi, mevduat ve kart tekliflerini tek ekranda,
-                tarafsız ve ücretsiz karşılaştır.
+                Kredi, mevduat ve kredi kartı tekliflerini yan yana koy. 50’den fazla banka,
+                tek ekran. Tarafsız ve ücretsiz.
               </p>
             </Reveal>
 
